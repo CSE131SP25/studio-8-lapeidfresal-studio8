@@ -6,13 +6,16 @@ import support.cse131.NotYetImplementedException;
 
 public class Quiz {
 	
+	private int points;
+	
 	/**
 	 * Constructor
 	 * @param questions
 	 */
 	public Quiz(Question[] questions) {
-		throw new NotYetImplementedException();
+	
 	}
+	
 	
 	/**
 	 * Prompts the user to answer, then returns a String containing their answer.
@@ -30,7 +33,7 @@ public class Quiz {
 	 * @return int number of total points
 	 */
 	public int getTotalPoints() {
-		throw new NotYetImplementedException();
+		return 0;
 	}
 	
 	/**

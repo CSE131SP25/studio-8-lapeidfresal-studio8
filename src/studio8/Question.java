@@ -4,14 +4,20 @@ import support.cse131.NotYetImplementedException;
 
 public class Question {
 	
+	private String prompt;
+	private String answer;
+	private int points;
+	
 	/**
 	 * Constructor
 	 * @param prompt
 	 * @param answer
 	 * @param points
 	 */
-	public Question(String prompt, String answer, int points) {
-		throw new NotYetImplementedException();
+	public Question(String promptIn, String answerIn, int pointsIn) {
+		prompt = promptIn;
+		answer = answerIn;
+		points = pointsIn;
 	}
 	
 	/**
@@ -40,7 +46,7 @@ public class Question {
 	 * @return int points
 	 */
 	public int getPoints() {
-		throw new NotYetImplementedException();
+		return points;
 	}
 	
 	/**
@@ -48,7 +54,11 @@ public class Question {
 	 * @return String answer
 	 */
 	public String getAnswer() {
-		throw new NotYetImplementedException();
+		return answer;
+	}
+	
+	public String getPrompt() {
+		return prompt;
 	}
 	
 	public static void main(String[] args) {
